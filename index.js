@@ -7,12 +7,9 @@ for (y = 1; y >= -1; y -= 0.05, pacman += '<br>') {
       Math.abs(Math.atan2(y, x)) > 0.5 && // mouth
       x * x + Math.pow(y - 0.5, 2) > 0.02 // eye
     ) {
-      // console.log('*')
       pacman += '*'
     } else {
-      // console.log(' ')
-      pacman += '..'
-      // &nbsp;
+      pacman += '&nbsp;'
     }
   }
 }
